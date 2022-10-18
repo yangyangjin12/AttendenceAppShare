@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_vertical"
+        ><!-- 左右上距离边缘的距离-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入用户名或手机号"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_text_bg"
+            /><!--paddingLeft 空格内距离空格边框左边的距离-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:orientation="horizontal"><!-- 左右上距离边缘的距离-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="259dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="36dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="请输入密码"
+            android:inputType="numberPassword"
+            android:paddingLeft="20dp"
+            android:textSize="18sp" /><!--paddingLeft 空格内距离空格边框左边的距离-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="忘记密码" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="25dp"
+        android:background="@drawable/btn_bg_selector"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:text="还没有账号？"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"/>
+
+
+
+</LinearLayout>
