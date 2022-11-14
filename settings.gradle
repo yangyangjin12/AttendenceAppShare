@@ -3,14 +3,23 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        //maven {
+          //  allowInsecureProtocol = true  //加这个是因为mob会被判定为不安全的协议而无法引入
+           // url "http://mvn.mob.com/android"
+        //}
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
+        repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+        repositories {
         google()
         mavenCentral()
+            maven {url "https://mvn.mob.com/android"
+                allowInsecureProtocol = true}
     }
 }
-rootProject.name = "Application2"
+rootProject.name = "application2"
 include ':app'
